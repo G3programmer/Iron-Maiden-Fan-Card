@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'IronMaiden';
+  src: url('./assets/fonts/maiden.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+sugestão de mudança de cores
+  --text: #e63338;
+  --text-border1: #fff;
+  --text-border2: #000;
+  */
+
+
+/*
+--Sugestão de cores para testar ainda:
+  --bg:#23000f;
+  --card-bg: #1a0010;
+*/
+:root {
+  --bg: #180000;
+  --text: #fff;
+  --card-bg: #15001a;
+  --card-border:#44d800;
+  --card-image-border: #000;
+  --border: red;
+  --sans: 'IronMaiden', 'Segoe UI', Roboto, sans-serif;
+  
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+
+body {
+  margin: 0;
+}
+
+.img-title {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--card-image-border);
+}
+
+.card-title {     
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 2px;
+  font-family: var(--sans);
+  font-weight: 500;
+  color: var(--text);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+
+#app {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
