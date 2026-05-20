@@ -1,7 +1,7 @@
 # 🎸 Iron Maiden: The Legacy of the Beast Fan Page
 
 <p align="center">
-  <img src="./src/assets/title-iron-maiden.webp" alt="Iron Maiden Logo" width="400">
+  <img src="./src/assets/iron maiden title.webp" alt="Iron Maiden Logo" width="400">
 </p>
 
 <p align="center">
